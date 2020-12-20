@@ -20,8 +20,13 @@ destination = os.path.join(os.getcwd(), r"dist\examples\client\clientModule.ino"
 os.makedirs(os.path.dirname(destination), exist_ok=True)
 shutil.copy(origin, destination)
 
-origin = os.path.join(os.getcwd(), r"src\serverModule.cpp")
-destination = os.path.join(os.getcwd(), r"dist\examples\server\serverModule.ino")
+# origin = os.path.join(os.getcwd(), r"src\serverModule.cpp")
+# destination = os.path.join(os.getcwd(), r"dist\examples\server\serverModule.ino")
+# os.makedirs(os.path.dirname(destination), exist_ok=True)
+# shutil.copy(origin, destination)
+
+origin = os.path.join(os.getcwd(), r"src\asyncServerModule.cpp")
+destination = os.path.join(os.getcwd(), r"dist\examples\asyncServer\asyncServerModule.ino")
 os.makedirs(os.path.dirname(destination), exist_ok=True)
 shutil.copy(origin, destination)
 
